@@ -1,9 +1,9 @@
-In this multi-year research, rotating Anti-de Sitter spacetimes are applied to model quark-gluon-like plasmas typical in heavy ion collisions. 
-Employing AdS/CFT correspondence, we present a stationary, rotating, strongly coupled conformal plasma, modeled as a dual to a 5D Myers-Perry Anti-de Sitter Black Hole. 
-We derive and calculate the plasma's long and short-wavelength spectra, distinguished as hydrodynamic and non-hydrodynamic modes, based on linear perturbations in the 5D gravitational theory. 
-These perturbations, correlating to 4D plasma fluctuations, yield distinct quasinormal modes, identified as eigenvalues of a non-Hermitian operator. 
-Our investigation explores the application of hydrodynamics to these plasmas, particularly under rotational conditions including near-extremality. 
-We computed the radius of convergence for hydrodynamic regimes, derived explicit hydrodynamic dispersion relations with boosted fluid transport coefficients, parameterized with momentum and vorticity. 
-The study verifies the physical behavior of modeled plasmas, ensuring stability and causality across all temperatures and non-subluminal vorticities, aligning with prior findings on relativistic fluids. 
-Additionally, we explore novel behaviors in the non-hydrodynamic spectrum under rotation, such as critical points, mode decay enhancement or suppression, and multiple level crossings between non-hydrodynamic modes. 
-The emergence of branch cuts in holographic fluids at extremality, analogous to those in charged holographic fluids, is also observed.
+In this ongoing five-year research, rotating Anti-de Sitter spacetimes are applied to model quark-gluon-like plasmas typical in heavy ion collisions.
+Employing AdS/CFT correspondence, we present a stationary, rotating, strongly coupled conformal plasma, modeled as a dual to a 5D Myers-Perry Anti-de Sitter Black Hole.
+We derive and calculate the plasma's long and short-wavelength spectra, distinguished as hydrodynamic and non-hydrodynamic modes, based on linear perturbations in the 5D gravitational theory.
+These perturbations, corresponding to 4D plasma fluctuations, yield distinct quasinormal modes, identified as eigenvalues of a non-Hermitian operator.
+Our investigation explores the application of hydrodynamics to these plasmas, particularly under rotational conditions including near-extremality.
+We computed the radius of convergence for hydrodynamic regimes, derived explicit hydrodynamic dispersion relations with boosted fluid transport coefficients, parameterized with momentum and vorticity.
+The study verifies the physical behavior of modeled plasmas, ensuring stability and causality across all temperatures and non-subluminal vorticities, aligning with prior findings on relativistic fluids.
+Additionally, we explore novel behaviors in the non-hydrodynamic spectrum under rotation, such as critical points, mode decay enhancement or suppression, and multiple level crossings between non-hydrodynamic modes.
+Similar to charged holographic fluids, we also observe features such as the emergence of branch cuts near extremality.
