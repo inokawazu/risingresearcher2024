@@ -7,3 +7,4 @@ presentation.pdf: presentation.tex
 
 clean:
 	latexmk -C
+	rm -fv *.nav *.snm
