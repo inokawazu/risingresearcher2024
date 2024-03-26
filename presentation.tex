@@ -1,9 +1,11 @@
-\documentclass{beamer}
+\documentclass[xcolor=dvipsnames]{beamer}
 
 \usepackage{pdfpages} % for the code of conduct
 \usepackage{todonotes}
 \usepackage{graphicx}
 \usepackage{hyperref}
+
+% \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 
 \hypersetup{
     colorlinks = true,
@@ -274,6 +276,194 @@
   \missingfigure{figure to help split sectors}
 \end{frame}
 
+% Near Boundary Expansion
+% Source/VEV
+% Sourcless Perturbations -> Non-Hermitian Operator -> Quasinormal Modes -> Dual Spectrum
+% Hydrodynamics
+% Hydroydnamics Expansion
+% Critical Point (Maybe)
+
+\section{Results}
+
+\begin{frame}{Results}
+
+\href{https://arxiv.org/abs/2308.11686}{Amano, Kaminski et al.}
+
+\begin{itemize}
+\item
+  Non-Hydrodynamic Modes and the effects of non-extremal rotation.
+  \begin{itemize}
+  \item
+    Tensor
+  \item
+    Vector
+  \item
+    Scalar
+  \end{itemize}
+\item
+  Cross Spectrum Comparison
+\item
+  The Emergence of Hydrodynamics
+\item
+  Stability
+\end{itemize}
+\end{frame}
+
+\begin{frame}{\(\mathcal K' = \mathcal J + 2\) Tensor Sector}
+  \missingfigure{\(\mathcal K' = \mathcal J + 2\) Tensor Sector Animation}
+% \phantomsection\label{mathcal-k-mathcal-j-2-tensor-sector}
+% \begin{center}
+%     \animategraphics[loop,autoplay,width=0.8\textwidth]{10}{build/tensor_dance_v2-}{0}{121}
+% \end{center}
+\(\mathcal K' = \mathcal J + 2\); \(h_{++}\)
+\end{frame}
+
+\begin{frame}{\(\mathcal K' = \mathcal J + 1\) Vector Fluctuations}
+  \begin{columns}[T]
+    \begin{column}{0.33\textwidth}
+      \includegraphics[width=1.05\textwidth]{figs/Vector_rp_10_grid_45_a_0.pdf}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \includegraphics[width=1.05\textwidth]{figs/Vector_rp_10_grid_45_a_1_2.pdf}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \includegraphics[width=1.05\textwidth]{figs/Vector_rp_10_grid_45_a_9_10.pdf}
+    \end{column}
+  \end{columns}
+
+  \vfill
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \(a/\ell \in \{0, 1/2, 9/10\}\)\\
+      \(\mathcal K' = \mathcal J + 1\); \(h_{+r}\), \(h_{+t}\), \(h_{+3}\) 
+      (and \(h_{++}\) if \(\mathcal J \geq 1\))
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \(\mathcal J = 0, 1/2, 1, \ldots, 199/2, 100\), \(r_+/\ell = 10\)\\
+      \(\bigtriangleup \equiv \mathcal J = 0\),
+      \(\bigoplus \equiv \mathcal J = 100\)
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{\(\mathcal K' = \mathcal J\) Scalar Fluctuations}
+
+  \begin{columns}[T]
+    \begin{column}{0.33\textwidth}
+      \includegraphics[width=1.05\textwidth]{figs/scalar_ef_spherical_a0.pdf}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \includegraphics[width=1.05\textwidth]{figs/scalar_ef_spherical_a1_2.pdf}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \includegraphics[width=1.05\textwidth]{figs/scalar_ef_spherical_a9_10.pdf}
+    \end{column}
+  \end{columns}
+
+  \vfill
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \(a/\ell \in \{0, 1/2, 9/10\}\)\\
+      \(\mathcal K' = \mathcal J\), \(h_{+-}\); \(h_{ab}\) where
+      \(a,b \in \{r,t,3\}\)\\
+      (, \(h_{+r}\), \(h_{+t}\), \(h_{+3}\) if \(\mathcal J \geq 1\) ) (, and
+      \(h_{++}\) if \(\mathcal J \geq 2\))
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \(\mathcal J = 0, 1/2, 1, \ldots, 199/2, 100\), \(r_+/\ell = 10\)\\
+      \(\bigtriangleup \equiv \mathcal J = 0\),
+      \(\bigoplus \equiv \mathcal J = 100\)
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{The Emergence of Hydrodynamics}
+  To study the dispersion relations of the lowest gapless modes, we looked
+  at the momentum diffusion sector.
+
+  \vfill
+
+  We solved spectra for
+  \(r_+ = \{10, 100, 1000, 10^4 , 10^5 , 10^6 , 10^7 \}\) and
+  \(\mathcal J = 0, 1/2, 1, \ldots, \mathcal J_\mathrm{max}\).\footnote<.->{\(\mathcal J_\mathrm{max}/r_+ = \mathit j_\mathrm{max} = 0.1\)}
+
+  \vfill
+
+  To see the emergence of hydrodynamics, we fitted the data to the
+  equation below with fitting parameters \(\alpha\), \(\beta\), \(D\), and
+  \(v\).
+
+  \vfill
+
+  \begin{equation}
+    \omega = v \mathcal J^\beta - i D \mathcal J^\alpha
+  \end{equation}
+\end{frame}
+
+\begin{frame}
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=1.05\textwidth]{figs/vector_dispersive_mode_rp_vs_im_scaling_over_a_scaled_Jleq0_1.pdf}\\
+      \includegraphics[width=1.05\textwidth]{figs/vector_dispersive_mode_rp_vs_diffusion_over_a_scaled_Jleq0_1.pdf}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=1.05\textwidth]{figs/vector_dispersive_mode_rp_vs_re_scaling_over_a_scaled_Jleq0_1.pdf}\\
+      \includegraphics[width=1.05\textwidth]{figs/vector_dispersive_mode_rp_vs_soundspeed_over_a_scaled_Jleq0_1.pdf}
+    \end{column}
+  \end{columns}
+
+  \vfill
+
+  \begin{columns}[c]
+    \begin{column}{0.5\textwidth}
+      (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{equation}
+        \omega = v \mathcal J^\beta - i D \mathcal J^\alpha
+      \end{equation}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Cross Spectrum Comparisons}
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=0.9\textwidth]{figs/all_sectors_compared_ef_spherical_over_a0.pdf}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=0.9\textwidth]{figs/all_sectors_compared_ef_spherical_over_a1_2.pdf}
+    \end{column}
+  \end{columns}
+
+  \vfill
+
+  \begin{columns}[c]
+    \begin{column}{0.33\textwidth}
+      \textcolor{ForestGreen}{$\cdot$ Tensor}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \textcolor{red}{$\cdot$ Vector}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \textcolor{blue}{$\cdot$ Scalar}
+    \end{column}
+  \end{columns}
+\end{frame}
+
 \section{Conclusion}
 
 \begin{frame}{Summary and Outlook}
@@ -331,7 +521,6 @@
   Research in this presentation also included contributions from
 
   \begin{itemize}
-    % \tightlist
     \item
       \emph{Mike Blake}, \emph{Casey Cartwright}, \emph{Matthias Kaminski},
       and \emph{Anthony Thompson}\\
