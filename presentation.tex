@@ -2,6 +2,7 @@
 
 \usepackage{pdfpages} % for the code of conduct
 \usepackage{todonotes}
+\usepackage{graphicx}
 
 \title{\input{title.txt}}
 \author{Markus A.G. Amano}
@@ -140,6 +141,31 @@
 
 \end{frame}
 
+\begin{frame}[squeeze]
+  \frametitle{Mapping 4D Rotation to 3D}
+  \begin{itemize}
+    \item Two independent planes of rotation in $4$D 
+    \item Hopf Coordinates: 
+      \begin{align*}
+        &x=\cos\psi_H\sin \theta_H\,,&y=\sin \psi_H\sin \theta_H\\
+        &z=\cos \phi_H\cos \theta_H\,,&w=\sin \phi_H\cos \theta_H
+      \end{align*}
+    \item Angular Momentum Vector $J = a\frac\partial{\partial\theta_H} + b\frac\partial{\partial\theta_H}$
+  \end{itemize}
+  \begin{columns}[t]
+    \begin{column}{0.5\paperwidth}
+      \includegraphics[height=0.45\paperheight]{genfigs/axis_lines.pdf}
+    \end{column}
+    \begin{column}{0.5\paperwidth}
+      \includegraphics[height=0.45\paperheight]{genfigs/hopf_links.pdf}
+    \end{column}
+  \end{columns}
+  % Interactive Versions here and here
+\end{frame}
+
+% Angular momentum (and angular velocity)
+% 5d two angular momentum, 4d one angular momentum
+
 % Explain Tree
 
 % CFT
@@ -150,7 +176,7 @@
 % Temperature
 % AdS MP AdS Black Hole
 % Angular momentum (and angular velocity)
-% 5D two angular momentum, 4D one angular momentum
+% 5d two angular momentum, 4d one angular momentum
 % Simplifying Angular Momentum Configuration and the axis-full Configuration
 % Linear Perturbations
 % Near Boundary Expansion
