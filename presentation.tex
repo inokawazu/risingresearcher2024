@@ -115,7 +115,7 @@
 \begin{frame}
   \frametitle{Adding Temperature}
 
-  \begin{block}{}non-zero temperature $\longleftrightarrow$ event horizon\end{block}
+  \begin{block}{}Non-zero Temperature $\longleftrightarrow$ Event Horizon\end{block}
 
   \begin{block}{}
     $\frac {L^2}{z^2} \left( -dt^2 + d\vec x\cdot d\vec x + dz^2 \right) \rightarrow \frac {L^2}{z^2} \left( -f(z) dt^2 + d\vec x\cdot d\vec x + \frac 1{f(z)}dz^2 \right)$
@@ -197,12 +197,39 @@
   \begin{itemize}
     \item cooridnates: $(t, \theta, \phi, \psi, r)$
     \item $\sigma$'s for the metric of a 3D sphere
-    \item $r_+ \equiv$ outer horizon $\left(G(r_+)=0\right)$
+    \item $r_+ \equiv$ outer horizon, $\left(G(r_+)=0\right)$
     \item Angular momentum Vector $a\frac\partial{\partial\psi}$
   \end{itemize}
 
 \end{frame}
 
+\begin{frame}
+  \frametitle{Perturbing Field Theory}
+  \framesubtitle{with metric perturbations [Reference Wald 1984 pg. 183]}
+
+  \begin{block}{Perturbed Metric}
+    \begin{equation*}
+      g^{p}_{\mu\nu} {dx}^\mu {dx}^\nu = \left(g_{\mu\nu}+\epsilon~h_{\mu\nu}+O(\epsilon^2)\right) {dx}^\mu {dx}^\nu
+    \end{equation*}
+
+    \begin{equation*}
+      \left\langle \delta T_{\mu\nu}\right\rangle\longleftrightarrow h_{\mu\nu}
+    \end{equation*}
+  \end{block}
+
+  \begin{block}{Einstein Field Equations at First Order}
+    \begin{equation*}
+      -\frac{1}{2}\nabla_\mu \nabla_\nu h-\frac{1}{2}\nabla^\lambda \nabla_\lambda h_{\mu\nu}+\nabla^\lambda \nabla_{(\mu}h_{\nu)\lambda} = \textcolor{red}{\frac{2\Lambda}{D-2}h_{\mu\nu}}
+    \end{equation*}
+  \end{block}
+
+  % The Einstein Field Equations at first order ([Wald 1984][wald1984]) are linear PDEs.
+
+  \begin{block}{Enhanced Symmetry}
+    \begin{center}PDEs $\rightarrow$ Decoupled set of ODEs\end{center}
+  \end{block}
+
+\end{frame}
 
 % Explain Tree
 
