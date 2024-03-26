@@ -2,7 +2,7 @@
 
 build: presentation.pdf
 
-genfigs/generate.flag:
+genfigs/generate.flag: run_notebooks.jl comparing_angles.jl
 	julia run_notebooks.jl
 	@touch genfigs/generate.flag
 

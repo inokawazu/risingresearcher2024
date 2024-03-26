@@ -134,7 +134,7 @@ hopflinks_plot = let m=75, n = 100
 		plot3d!(plt, plotr4coords..., ms=1, label=nothing, color=lcolor)
 	end
 
-	plot(plt, ylims=(-3,3), xlims=(-3,3), zlims=(-3,3), ar=1)
+	plot(plt, ylims=(-3,3), xlims=(-3,3), zlims=(-3,3), ar=1, title="a = b")
 end
 
 # ╔═╡ ec53168d-a335-4d87-989f-089249875ab1
@@ -168,7 +168,7 @@ axislines_plot = let m=75, n = 100
 		end
 	end
 
-	plot(plt, ylims=(-1.5,1.5), xlims=(-1.5,1.5), zlims=(-1.5,1.5), ar=1)
+	plot(plt, ylims=(-1.5,1.5), xlims=(-1.5,1.5), zlims=(-1.5,1.5), ar=1, title="a = 0 and b = 0")
 end
 
 # ╔═╡ 60093748-477d-4f38-955b-8b135fc89ace
