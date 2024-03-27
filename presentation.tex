@@ -6,6 +6,9 @@
 \usepackage{animate}
 \usepackage{hyperref}
 
+\usepackage{tikz}
+\usetikzlibrary{decorations.pathmorphing}
+
 % \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
 
 \hypersetup{
@@ -149,7 +152,24 @@
     $ f(z) = 1 - z^3/z_h^2\,, \quad \mathrm T \propto 1/z_h $
   \end{block}
 
-  \missingfigure{a figure that present temperature if possible}
+  \begin{center}
+    \begin{tikzpicture}
+      % Draw a black hole
+      \fill[black] (0,0) circle (1.5cm);
+
+      % Draw the event horizon
+      \draw[dashed, white, thick] (0,0) circle (1.5cm);
+
+      % Draw squiggly arrows representing Hawking radiation
+      \foreach \i in {0,30,...,330}
+      {
+        \draw[->, red, thick, decorate, decoration={snake, amplitude=1mm, segment length=3mm}] (\i:1.5cm) -- (\i:2.5cm);
+      }
+
+      % Add the equation for Hawking temperature
+      \node[below right] at (1.5,-1.5) {$T=\frac{1}{z_h\ell\pi}$};
+    \end{tikzpicture}
+  \end{center}
 \end{frame}
 
 \begin{frame}
