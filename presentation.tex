@@ -300,35 +300,29 @@
 
 \begin{frame}{Results}
 
-\href{https://arxiv.org/abs/2308.11686}{Amano, Kaminski et al.}
+  \href{https://arxiv.org/abs/2308.11686}{Amano, Kaminski et al.}
 
-\begin{itemize}
-\item
-  Non-Hydrodynamic Modes and the effects of non-extremal rotation.
   \begin{itemize}
-  \item
-    Tensor
-  \item
-    Vector
-  \item
-    Scalar
+    \item Non-Hydrodynamic Modes and the effects of non-extremal rotation.
+      \begin{itemize}
+        \item Tensor
+        \item Vector
+        \item Scalar
+      \end{itemize}
+    \item Cross Spectrum Comparison
+    \item The Emergence of Hydrodynamics
+      % \item Stability
+    \item Large Temperature Hydrodynamic Transport
   \end{itemize}
-\item
-  Cross Spectrum Comparison
-\item
-  The Emergence of Hydrodynamics
-\item
-  Stability
-\end{itemize}
 \end{frame}
 
 \begin{frame}{\(\mathcal K' = \mathcal J + 2\) Tensor Sector}
   \missingfigure{\(\mathcal K' = \mathcal J + 2\) Tensor Sector Animation}
-% \phantomsection\label{mathcal-k-mathcal-j-2-tensor-sector}
-% \begin{center}
-%     \animategraphics[loop,autoplay,width=0.8\textwidth]{10}{build/tensor_dance_v2-}{0}{121}
-% \end{center}
-\(\mathcal K' = \mathcal J + 2\); \(h_{++}\)
+  % \phantomsection\label{mathcal-k-mathcal-j-2-tensor-sector}
+  % \begin{center}
+  %     \animategraphics[loop,autoplay,width=0.8\textwidth]{10}{build/tensor_dance_v2-}{0}{121}
+  % \end{center}
+  \(\mathcal K' = \mathcal J + 2\); \(h_{++}\)
 \end{frame}
 
 \begin{frame}{\(\mathcal K' = \mathcal J + 1\) Vector Fluctuations}
@@ -384,7 +378,8 @@
   \begin{columns}[c]
     \begin{column}{0.5\textwidth}
       \(a/\ell \in \{0, 1/2, 9/10\}\)\\
-      \(\mathcal K' = \mathcal J\), \(h_{+-}\); \(h_{ab}\) where
+      \(\mathcal K' = \mathcal J\), 
+      \(h_{+-}\) \\ \(h_{ab}\) where
       \(a,b \in \{r,t,3\}\)\\
       (, \(h_{+r}\), \(h_{+t}\), \(h_{+3}\) if \(\mathcal J \geq 1\) ) (, and
       \(h_{++}\) if \(\mathcal J \geq 2\))
@@ -480,6 +475,124 @@
     \end{column}
   \end{columns}
 \end{frame}
+
+\begin{frame}[squeeze]
+  \frametitle{Large Temperature Limit}
+
+  \begin{itemize}
+    \item $r_+ \to \infty$ in QNM fluctuation equations
+    \item Spinning black hole geometry dual to a boasted fluid
+    \item Dual field theory on small patch of $S^3 \approx \mathbb{R}^3$
+  \end{itemize}
+
+  \begin{block}{Rescaling}
+    \begin{equation*}
+      \begin{aligned}
+        \nu &\to \alpha 2\nu r_+/\ell \\
+        \mathcal{J} &\to \alpha j r_+/\ell \\
+        r_+ &\to \alpha r_+ \\
+        r &\to \alpha r\\
+        \quad \alpha&\to\infty
+      \end{aligned}
+    \end{equation*}
+  \end{block}
+
+  \begin{alertblock}{}
+    Leading order terms in $\alpha$ kept
+  \end{alertblock}
+
+\end{frame}
+
+% \begin{frame}[squeeze]
+%   \frametitle{Large Temperature Limit}
+
+%   Large black holes with the strict limit $r_+ \to \infty$ performed in the fluctuation equations which determine the QNMs (after deriving them). There is no limit performed on the Myers-Perry black hole metric, i.e.~the geometry is that of a spinning black hole, not that of a black brane. The dual field theory lives on a small patch covering part of a compact spacetime $S^3\times \mathbb{R}$. This case involves a rescaling of the frequency 
+%   \begin{equation}
+%     \omega\to\alpha 2\nu r_+/L \, , \quad \alpha\to\infty
+%   \end{equation}
+%   and the angular momentum of the fluctuation 
+%   \begin{equation}
+%     \mathcal{J}\to\alpha j r_+/L\, , \quad \alpha\to\infty
+%   \end{equation} 
+%   as well as the black hole horizon radius
+%   and radial coordinate
+%   \begin{equation}
+%     r_+\to \alpha r_+\, , \quad \alpha\to\infty \, ,
+%   \end{equation}
+%   \begin{equation}
+%     r\to \alpha r\, , \quad \alpha\to\infty \, ,
+%   \end{equation}
+%   and leading order terms in $\alpha$ are kept in the fluctuation equations. QNM frequencies are reported in terms of the dimensionless frequency
+%   $\nu$, which is a function of the now continuous dimensionless angular momentum parameter $j$.
+
+% \end{frame}  
+
+\begin{frame}
+  \frametitle{Equation of State}
+
+  \begin{block}{Thermodynamic Consistency Relation}
+    \begin{center}
+      $\epsilon + \Phi_5 = s \, T + 2\mathfrak{j}\Omega$
+    \end{center}
+  \end{block}
+
+  {
+    \begin{eqnarray*}
+      s&\sim& \frac{r_+^3}{4 G_5 \ell^2 \sqrt{\ell^2-a^2}} \\
+      \epsilon &\sim& \frac{\mu (a^2+3 \ell^2)}{8 \pi G_5 \ell^4} \\ 
+      P_\perp &\sim& \frac{\mu (\ell^2-a^2) }{8 \pi G_5 \ell^4}\, , \quad P_{||} \sim \frac{\mu (3 a^2+ \ell^2)}{8 \pi G_5 \ell^4} \, , \\
+      \mathfrak{j} &\sim& \frac{a \mu}{2\pi \ell^2 G_5}  \, , \quad \Omega \sim \frac{a}{\ell^2} \, , \\ 
+      \mu &\sim& \frac{r_+^4}{2 (\ell^2 - a^2)} \,,\quad T \sim \frac{\sqrt{\ell^2-a^2}~r_+}{\pi \ell^3}
+    \end{eqnarray*}
+  }
+
+\end{frame}
+
+\begin{frame}[squeeze]
+  \frametitle{Large Temperature Hydrodynamic Transport}
+  \framesubtitle{Shear Sector}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.7\paperwidth]{figs/htp_h3p_rinf_hydro_DiffusionPropagationOverA.pdf}
+  \end{figure}
+
+  \begin{columns}[c]
+    \begin{column}{0.4\textwidth}
+      \(h_{+r}\), \(h_{+t}\), \(h_{+3}\)\\
+      (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{equation*}
+        \nu = a j - i \frac 12 (1-a^2)^{3/2} j^2
+      \end{equation*}
+    \end{column}
+  \end{columns}
+
+\end{frame}  
+
+\begin{frame}
+  \frametitle{Large Temperature Hydrodynamic Transport}
+  \framesubtitle{Sound Sector}
+  \begin{figure}
+    \centering
+    \includegraphics[width=0.9\paperwidth]{figs/scalar_rinf_hydro_DiffandPropOverA.pdf}
+  \end{figure}
+
+  \begin{columns}[c]
+    \begin{column}{0.4\textwidth}
+      \(h_{+-}\) \\ \(h_{ab}\) where \(a,b \in \{r,t,3\}\)\\
+      (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{equation*}
+        \omega = \frac{v_0\pm v_s}{1\pm v_0 v_s} j - \frac{i}{2} {\Gamma_0} \frac{(1-v_0^2)^{3/2}}{(1\pm v_0 v_s)^3} j^2
+      \end{equation*}
+    \end{column}
+  \end{columns}
+
+\end{frame}  
 
 \section{Conclusion}
 
