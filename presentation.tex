@@ -126,9 +126,9 @@
     \item classical gravity with matter fields
   \end{itemize}
 
-  \begin{equation*}
-    S_{EH}=\frac{1}{16\pi G_5}\int d^5 x \sqrt{-g}\left(R-2\Lambda\right) +S_{ct}
-  \end{equation*}
+  % \begin{equation*}
+  %   S_{EH}=\frac{1}{16\pi G_5}\int d^5 x \sqrt{-g}\left(R-2\Lambda\right) +S_{ct}
+  % \end{equation*}
 
 \end{frame}
 
@@ -144,7 +144,7 @@
   ) [ \href{https://inspirehep.net/literature/1316320}{Reference Natsuume 2012} ]}
   \begin{block}{GKP-Witten Relation}
     \begin{center}Z$_\text{gauge}$ = Z$_\text{AdS}$\end{center}
-    $$\left\langle \exp\left(i\int\phi^{(0)} \mathcal O_\phi\right) \right\rangle =  e^{i S_\text{on-shell}[\phi(z\rightarrow0) = \phi^{(0)}]}$$
+    % $$\left\langle \exp\left(i\int\phi^{(0)} \mathcal O_\phi\right) \right\rangle =  e^{i S_\text{on-shell}[\phi(z\rightarrow0) = \phi^{(0)}]}$$
   \end{block}
 
   \begin{block}{The Holographic Dictionary}
@@ -166,11 +166,10 @@
 
   \begin{block}{}Non-zero Temperature $\longleftrightarrow$ Event Horizon\end{block}
 
-  \begin{block}{}
-    $\frac {\ell^2}{z^2} \left( -dt^2 + d\vec x\cdot d\vec x + dz^2 \right) \rightarrow \frac {\ell^2}{z^2} \left( -f(z) dt^2 + d\vec x\cdot d\vec x + \frac 1{f(z)}dz^2 \right)$
-
-    $ f(z) = 1 - z^3/z_h^2$
-  \end{block}
+  $$\frac {\ell^2}{z^2} \left( -dt^2 + d\vec x\cdot d\vec x + dz^2 \right) \rightarrow \frac {\ell^2}{z^2} \left( -f(z) dt^2 + d\vec x\cdot d\vec x + \frac 1{f(z)}dz^2 \right)$$
+  % \begin{block}{}
+  %   % $$ f(z) = 1 - z^3/z_h^2 $$
+  % \end{block}
 
   \begin{center}
     \begin{tikzpicture}
@@ -222,7 +221,7 @@
         &x=\cos\psi_H\sin \theta_H\,,&y=\sin \psi_H\sin \theta_H\\
         &z=\cos \phi_H\cos \theta_H\,,&w=\sin \phi_H\cos \theta_H
       \end{align*}
-    \item Angular Momentum Vector $J = a\frac\partial{\partial\theta_H} + b\frac\partial{\partial\theta_H}$
+    \item Angular Momentum Vector $J = a\frac\partial{\partial\psi_H} + b\frac\partial{\partial\phi_H}$
   \end{itemize}
   \begin{columns}[t]
     \begin{column}{0.5\paperwidth}
@@ -686,7 +685,7 @@
     \end{column}
   \end{columns}
 
-\end{frame}  
+\end{frame}
 
 \begin{frame}
   \frametitle{Large Temperature Hydrodynamic Transport}
@@ -745,7 +744,7 @@
       \item
         be used in ``hydro codes''
       \item
-        Expand on the dynamics of $SU(2)\times U(1)$ \ldots RFP!
+        Expand on the dynamics of $SU(2)\times U(1)$
     \end{itemize}
   \end{block}
 
@@ -766,16 +765,21 @@
 
   Research in this presentation also included contributions from
 
-  \begin{itemize}
-    \item
-      \emph{Mike Blake}, \emph{Casey Cartwright}, \emph{Matthias Kaminski},
-      and \emph{Anthony Thompson}\\
-      (\href{https://inspirehep.net/literature/2174613}{Amano et al.~2022})
-    \item
-      \emph{Casey Cartwright}, \emph{Matthias Kaminski}, \emph{Jorge
-      Noronha}, \emph{Enrico Speranza}\\
-      (\href{https://inspirehep.net/literature/1994753}{Cartwright et al.~2023})
-  \end{itemize}
+  \begin{block}{Contributions}
+    {\small
+    \begin{itemize}
+      \item
+        \emph{Mike Blake}, \emph{Casey Cartwright}, \emph{Matthias Kaminski},
+        and \emph{Anthony Thompson}\\
+        (\href{https://inspirehep.net/literature/2174613}{Amano et al.~2022})
+      \item
+        \emph{Casey Cartwright}, \emph{Matthias Kaminski}, \emph{Jorge
+        Noronha}, \emph{Enrico Speranza}\\
+        (\href{https://inspirehep.net/literature/1994753}{Cartwright et al.~2023})
+    \end{itemize}
+  }
+  \end{block}
+
 \end{frame}
 
 % Explain Tree
