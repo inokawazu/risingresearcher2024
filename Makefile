@@ -2,7 +2,7 @@
 
 build: presentation.pdf
 
-genfigs/generate.flag: run_notebooks.jl comparing_angles.jl
+genfigs/generate.flag: run_notebooks.jl comparing_angles.jl figs/Tensor_Dance_V2.gif
 	@mkdir -p genfigs
 	julia run_notebooks.jl
 	convert figs/Tensor_Dance_V2.gif genfigs/tensor_dance_v2-%0d.png
