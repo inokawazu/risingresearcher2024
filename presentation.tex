@@ -16,12 +16,19 @@
     linkbordercolor = {red}
 }
 
+% \usetheme{Madrid}
+\usetheme{EastLansing}
+\beamertemplatenavigationsymbolsempty
+
 \title{\input{title.txt}}
 \author{Markus A.G. Amano}
+\date{April 2nd, 2024}
+
 \subtitle{\href{https://inspirehep.net/literature/2690368}{ arXiv:2308.11686 (Amano, Kaminski et al. 2023) }
   % \\{\tiny accepted for publication with Progress in Particle and Nuclear Physics}
 }
-\institute{Yamagata University (as a JSPS Fellow)}
+% \institute{Yamagata University (as a JSPS Fellow)}
+\institute{Yamagata University}
 
 
 \begin{document}
@@ -32,6 +39,8 @@
 }
 
 \maketitle
+
+\section{Introduction}
 
 \begin{frame}
   \frametitle{Two Motivating Questions}
@@ -49,9 +58,10 @@
   \end{columns}
 \end{frame}
 
+\subsection{Holography 101}
+
 \begin{frame}
   \frametitle{The Holographic Description}
-
 
   \begin{block}{Holographic Principle}
     The information of the universe can be encoded on its boundaries.
@@ -242,6 +252,8 @@
 
 \end{frame}
 
+\subsection{The Rotating Geometry}
+
 % Simplifying Angular Momentum Configuration and the axis-full Configuration
 \begin{frame}[squeeze]
   \frametitle{Equal Angular Momentum Black Hole}
@@ -350,6 +362,8 @@
 % Hydroydnamics Expansion
 % Critical Point (Maybe)
 
+\subsection{Hydrodynamics}
+
 \begin{frame}{Quasinormal Modes and Hydrodynamic Expansion}
 
   \begin{equation*}
@@ -409,6 +423,8 @@
     \item Large Temperature Hydrodynamic Transport
   \end{itemize}
 \end{frame}
+
+\subsection{Non-hydrodynamic Modes}
 
 \begin{frame}{\(\mathcal K' = \mathcal J + 2\) Tensor Sector}
   \begin{center}
@@ -486,6 +502,36 @@
   \end{columns}
 \end{frame}
 
+\begin{frame}{Cross Spectrum Comparisons}
+  \begin{columns}[T]
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=0.9\textwidth]{figs/all_sectors_compared_ef_spherical_over_a0.pdf}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=0.9\textwidth]{figs/all_sectors_compared_ef_spherical_over_a1_2.pdf}
+    \end{column}
+  \end{columns}
+
+  \vfill
+
+  \begin{columns}[c]
+    \begin{column}{0.33\textwidth}
+      \textcolor{ForestGreen}{$\cdot$ Tensor}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \textcolor{red}{$\cdot$ Vector}
+    \end{column}
+
+    \begin{column}{0.33\textwidth}
+      \textcolor{blue}{$\cdot$ Scalar}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\subsection{The Emergence of Hydrodynamics}
+
 \begin{frame}{The Emergence of Hydrodynamics}
   To study the dispersion relations of the lowest gapless modes, we looked
   at the momentum diffusion sector.
@@ -541,33 +587,7 @@
   \end{columns}
 \end{frame}
 
-\begin{frame}{Cross Spectrum Comparisons}
-  \begin{columns}[T]
-    \begin{column}{0.5\textwidth}
-      \includegraphics[width=0.9\textwidth]{figs/all_sectors_compared_ef_spherical_over_a0.pdf}
-    \end{column}
-
-    \begin{column}{0.5\textwidth}
-      \includegraphics[width=0.9\textwidth]{figs/all_sectors_compared_ef_spherical_over_a1_2.pdf}
-    \end{column}
-  \end{columns}
-
-  \vfill
-
-  \begin{columns}[c]
-    \begin{column}{0.33\textwidth}
-      \textcolor{ForestGreen}{$\cdot$ Tensor}
-    \end{column}
-
-    \begin{column}{0.33\textwidth}
-      \textcolor{red}{$\cdot$ Vector}
-    \end{column}
-
-    \begin{column}{0.33\textwidth}
-      \textcolor{blue}{$\cdot$ Scalar}
-    \end{column}
-  \end{columns}
-\end{frame}
+\subsection{Large Temperature Limit}
 
 \begin{frame}[squeeze]
   \frametitle{Large Temperature Limit}
