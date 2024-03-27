@@ -1,4 +1,4 @@
-\documentclass[xcolor=dvipsnames]{beamer}
+\documentclass[aspectratio=169, xcolor=dvipsnames]{beamer}
 
 \usepackage{pdfpages} % for the code of conduct
 \usepackage{todonotes}
@@ -172,22 +172,24 @@
   % \end{block}
 
   \begin{center}
-    \begin{tikzpicture}
-      % Draw a black hole
-      \fill[black] (0,0) circle (1.5cm);
+    \scalebox{0.9}{
+      \begin{tikzpicture}
+        % Draw a black hole
+        \fill[black] (0,0) circle (1.5cm);
 
-      % Draw the event horizon
-      \draw[dashed, white, thick] (0,0) circle (1.5cm);
+        % Draw the event horizon
+        \draw[dashed, white, thick] (0,0) circle (1.5cm);
 
-      % Draw squiggly arrows representing Hawking radiation
-      \foreach \i in {0,30,...,330}
-      {
-        \draw[->, red, thick, decorate, decoration={snake, amplitude=1mm, segment length=3mm}] (\i:1.5cm) -- (\i:2.5cm);
-      }
+        % Draw squiggly arrows representing Hawking radiation
+        \foreach \i in {0,30,...,330}
+        {
+          \draw[->, red, thick, decorate, decoration={snake, amplitude=1mm, segment length=3mm}] (\i:1.5cm) -- (\i:2.5cm);
+        }
 
-      % Add the equation for Hawking temperature
-      \node[below right] at (1.5,-1.5) {$T=\frac{1}{z_h\ell\pi}$};
-    \end{tikzpicture}
+        % Add the equation for Hawking temperature
+        \node[below right] at (1.5,-1.5) {$T=\frac{1}{z_h\ell\pi}$};
+      \end{tikzpicture}
+    }
   \end{center}
 \end{frame}
 
@@ -393,9 +395,12 @@
 
   \vfill
 
-  \begin{block}{Hydrodynamic Expansion}
-    $$\omega = \sum_{i=0} \omega_{(i)} k^i$$
-  \end{block}
+  \begin{itemize}
+    \item \textbf{ Hydrodynamic Expansion } $\omega = \sum_{i=0} \omega_{(i)} k^i$
+  \end{itemize}
+
+  % \begin{block}{}
+  % \end{block}
 
 \end{frame}
 
@@ -507,11 +512,11 @@
 \begin{frame}{Cross Spectrum Comparisons}
   \begin{columns}[T]
     \begin{column}{0.5\textwidth}
-      \includegraphics[width=0.9\textwidth]{figs/all_sectors_compared_ef_spherical_over_a0.pdf}
+      \includegraphics[width=0.8\textwidth]{figs/all_sectors_compared_ef_spherical_over_a0.pdf}
     \end{column}
 
     \begin{column}{0.5\textwidth}
-      \includegraphics[width=0.9\textwidth]{figs/all_sectors_compared_ef_spherical_over_a1_2.pdf}
+      \includegraphics[width=0.8\textwidth]{figs/all_sectors_compared_ef_spherical_over_a1_2.pdf}
     \end{column}
   \end{columns}
 
@@ -556,21 +561,21 @@
 
   \vfill
 
-  \begin{equation}
+  \begin{equation*}
     \omega = v \mathcal J^\beta - i D \mathcal J^\alpha
-  \end{equation}
+  \end{equation*}
 \end{frame}
 
 \begin{frame}
   \begin{columns}[c]
     \begin{column}{0.5\textwidth}
-      \includegraphics[width=1.05\textwidth]{figs/vector_dispersive_mode_rp_vs_im_scaling_over_a_scaled_Jleq0_1.pdf}\\
-      \includegraphics[width=1.05\textwidth]{figs/vector_dispersive_mode_rp_vs_diffusion_over_a_scaled_Jleq0_1.pdf}
+      \includegraphics[width=0.9\textwidth]{figs/vector_dispersive_mode_rp_vs_im_scaling_over_a_scaled_Jleq0_1.pdf}\\
+      \includegraphics[width=0.9\textwidth]{figs/vector_dispersive_mode_rp_vs_diffusion_over_a_scaled_Jleq0_1.pdf}
     \end{column}
 
     \begin{column}{0.5\textwidth}
-      \includegraphics[width=1.05\textwidth]{figs/vector_dispersive_mode_rp_vs_re_scaling_over_a_scaled_Jleq0_1.pdf}\\
-      \includegraphics[width=1.05\textwidth]{figs/vector_dispersive_mode_rp_vs_soundspeed_over_a_scaled_Jleq0_1.pdf}
+      \includegraphics[width=0.9\textwidth]{figs/vector_dispersive_mode_rp_vs_re_scaling_over_a_scaled_Jleq0_1.pdf}\\
+      \includegraphics[width=0.9\textwidth]{figs/vector_dispersive_mode_rp_vs_soundspeed_over_a_scaled_Jleq0_1.pdf}
     \end{column}
   \end{columns}
 
@@ -582,9 +587,9 @@
     \end{column}
 
     \begin{column}{0.5\textwidth}
-      \begin{equation}
+      \begin{equation*}
         \omega = v \mathcal J^\beta - i D \mathcal J^\alpha
-      \end{equation}
+      \end{equation*}
     \end{column}
   \end{columns}
 \end{frame}
@@ -628,7 +633,7 @@
     \end{center}
   \end{block}
 
-  {
+  {\small
     \begin{eqnarray*}
       s&\sim& \frac{r_+^3}{4 G_5 \ell^2 \sqrt{\ell^2-a^2}} \\
       \epsilon &\sim& \frac{\mu (a^2+3 \ell^2)}{8 \pi G_5 \ell^4} \\ 
@@ -645,7 +650,7 @@
   \framesubtitle{Shear Sector}
   \begin{figure}
     \centering
-    \includegraphics[width=0.7\paperwidth]{figs/htp_h3p_rinf_hydro_DiffusionPropagationOverA.pdf}
+    \includegraphics[width=0.5\paperwidth]{figs/htp_h3p_rinf_hydro_DiffusionPropagationOverA.pdf}
   \end{figure}
 
   \begin{columns}[c]
