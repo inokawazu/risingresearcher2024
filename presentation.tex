@@ -53,7 +53,7 @@
       \begin{enumerate}
         \item What is the hydrodynamic description of QCD in the Quark Gluon Plasma phase?
         \item How does vorticity affect Quark Gluon Plasma matter?
-        \item What can a holographic model tell us the nature of strongly rotating plasmas?
+        \item What can a holographic model tell us about nature of strongly rotating plasmas?
       \end{enumerate}
     \end{column}
     \begin{column}{0.5\paperwidth}
@@ -95,7 +95,7 @@
   \framesubtitle{``the field theory side''}
   % CFT
   \begin{block}{}
-    \alert{CFT}(conformal field theory) is a field thery that is invariant conformal transformations.
+    \alert{CFT}(conformal field theory) is a field theory that is invariant under conformal transformations.
     $${ds}^2 \rightarrow \Omega^2 {ds}^2$$
   \end{block}
 
@@ -137,12 +137,10 @@
 % Action Dictionary/Witten Relation
 
 \begin{frame}
-  \frametitle{A Holographic Description }
+  \frametitle{A Holographic Description}
   \framesubtitle{
-    (
-    \href{https://inspirehep.net/literature/467202}{Gubser et al 1998},
-    \href{https://inspirehep.net/literature/467400}{Witten 1998}
-  ) [References \href{https://inspirehep.net/literature/1316320}{Natsuume 2012}; \href{https://www.cambridge.org/core/books/gaugegravity-duality/16CCA2E431B24AEF1B51B0F9C5BE755E}{Ammon, Erdmenger 2015}]}
+    (\href{https://inspirehep.net/literature/467202}{Gubser et al 1998},
+    \href{https://inspirehep.net/literature/467400}{Witten 1998}) [References \href{https://inspirehep.net/literature/1316320}{Natsuume 2012}; \href{https://www.cambridge.org/core/books/gaugegravity-duality/16CCA2E431B24AEF1B51B0F9C5BE755E}{Ammon, Erdmenger 2015}]}
   \begin{block}{GKP-Witten Relation}
     \begin{center}Z$_\text{gauge}$ = Z$_\text{AdS}$\end{center}
     % $$\left\langle \exp\left(i\int\phi^{(0)} \mathcal O_\phi\right) \right\rangle =  e^{i S_\text{on-shell}[\phi(z\rightarrow0) = \phi^{(0)}]}$$
@@ -150,9 +148,9 @@
 
   \begin{block}{The Holographic Dictionary}
     \begin{align*}
-      \left\langle T_{\mu\nu}\right\rangle &\longleftrightarrow g_{\mu\nu}\\
-      \left\langle J_{\mu}\right\rangle &\longleftrightarrow A_{\mu}\\
-      \left\langle\mathcal O_\phi\right\rangle &\longleftrightarrow \phi
+      \text{Stress Energy Momentum Tensor}~\left\langle T_{\mu\nu}\right\rangle &\longleftrightarrow g_{\mu\nu}\\
+      \text{Charge Current}~\left\langle J_{\mu}\right\rangle &\longleftrightarrow A_{\mu}
+      % \left\langle\mathcal O_\phi\right\rangle &\longleftrightarrow \phi
     \end{align*}
   \end{block}
 
@@ -205,7 +203,10 @@
   \end{block}
 
   \begin{alertblock}{global AdS vs local patch}
-    In the rotating case, we begin with global AdS, implying spherical symmetry for both the horizon and the boundary theory.
+    \begin{itemize}
+      \item Global AdS $\leftrightarrow$ spherical boundary\\
+      \item Local patch (zoomed in version of Global AdS) $\leftrightarrow$ planar boundary
+    \end{itemize}
   \end{alertblock}
 
   % \missingfigure{Zooming into a rotating black hole image to show relation between local and global views.}
@@ -584,7 +585,7 @@
 
   \begin{columns}[c]
     \begin{column}{0.5\textwidth}
-      (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
+      Relativistic Dispersion Relation (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
     \end{column}
 
     \begin{column}{0.5\textwidth}
@@ -657,7 +658,7 @@
   \begin{columns}[c]
     \begin{column}{0.4\textwidth}
       \(h_{+r}\), \(h_{+t}\), \(h_{+3}\)\\
-      (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
+      Relativistic Dispersion Relation (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
     \end{column}
 
     \begin{column}{0.4\textwidth}
@@ -679,8 +680,8 @@
 
   \begin{columns}[c]
     \begin{column}{0.4\textwidth}
-      \(h_{+-}\) \\ \(h_{ab}\) where \(a,b \in \{r,t,3\}\)\\
-      (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
+      \(h_{+-}\), \(h_{ab}\) where \(a,b \in \{r,t,3\}\)\\
+      Relativistic Dispersion Relation (\href{https://inspirehep.net/literature/1744607}{Kovtun 2019})
     \end{column}
 
     \begin{column}{0.4\textwidth}
@@ -723,8 +724,7 @@
         \end{itemize}
       \item
         Interpretation of linear instability in the dual field theory?
-      \item
-        be used in ``hydro codes''
+      \item Implementation in hydrodynamic models
       \item
         Expand on the dynamics of $SU(2)\times U(1)$
     \end{itemize}
