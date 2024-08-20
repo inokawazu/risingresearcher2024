@@ -1,4 +1,4 @@
-# Markus Amano Rising Researchers Presentation August 2nd, 2024
+# Markus Amano Rising Researchers Presentation April 2nd, 2024
 
 This repository contains the LaTeX source code and supplementary materials for
 the Rising Researchers presentation "Exploring Holographic QCD: Vorticity in
